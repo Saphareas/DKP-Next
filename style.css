@@ -6,7 +6,7 @@ Author: Fabian Große
 Author URI: https://github.com/Saphareas
 Description: This is a child theme for Wordpress based on MH Magazine lite. It customizes the parent theme for the DKP* Brandenburg website.
 Tags: one-column,two-columns,left-sidebar,right-sidebar,flexible-header,custom-header,custom-logo,custom-menu,featured-images,full-width-template,theme-options,threaded-comments,footer-widgets,blog,politics,news
-Version: 1.1
+Version: 1.2
 */
 
 /* Make the content 100% of the height */
@@ -37,6 +37,12 @@ aside.mh-sidebar {
 .slides { margin: 0 !important; }
 /* self-explaining */
 .search-form { background: #e64946; }
+
+.footer-link {
+    color: #999;
+    text-decoration: underline;
+    font-size: 0.75rem;
+}
 
 @media screen and (max-width: 900px) {
 
