@@ -5,12 +5,16 @@ _*Deutsche Kommunistische Partei (German Communist Party)_
 
 <!-- TOC -->
 
+- [Example](#example)
 - [Installing](#installing)
 - [Authors](#authors)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 
 <!-- /TOC -->
+
+## Example
+![screenshot](screenshot.png)
 
 ## Installing
 
@@ -28,4 +32,4 @@ This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE) fi
 
 ## Acknowledgments
 
-- Many thanks to [MH Themes](https://www.mhthemes.com/) for creating the parent theme and releasing it under the GPL2 license.
+Many thanks to [MH Themes](https://www.mhthemes.com/) for creating the parent theme and releasing it under the GPL2 license.
