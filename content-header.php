@@ -1,6 +1,6 @@
 <div class="mh-header-mobile-nav mh-clearfix"></div>
-<header class="mh-header stick-to-top" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
-	<div class="mh-container mh-container-inner mh-row mh-clearfix collapse">
+<header class="mh-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+	<div class="mh-container mh-container-inner mh-row mh-clearfix">
 		<?php mh_magazine_lite_custom_header(); ?>
 	</div>
 	<div class="mh-main-nav-wrap">

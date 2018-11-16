@@ -6,24 +6,24 @@ Author: Fabian Große
 Author URI: https://github.com/Saphareas
 Description: This is a child theme for Wordpress based on MH Magazine lite. It customizes the parent theme for the DKP* Brandenburg website.
 Tags: one-column,two-columns,left-sidebar,right-sidebar,flexible-header,custom-header,custom-logo,custom-menu,featured-images,full-width-template,theme-options,threaded-comments,footer-widgets,blog,politics,news
-Version: 1.4.1
+Version: 1.4.2
 */
 
 /* Make the content 100% of the viewport */
-body > .mh-container-outer { 
-    margin: 0 auto !important;
+body > .mh-container-outer {
+    margin: 0;
+    width: 100%;
     max-width: unset;
 }
 /* Site and header background in dark red, main content is still black on white */
-header.mh-header { 
-    background-color: darkred;     
+header.mh-header {
+    background-color: darkred;
 }
 /* Center the header image, remove vertical margin */
-.mh-header-image-link, 
+.mh-header-image-link,
 .mh-header-image {
     display: block;
     margin: 0 auto;
-    /*padding-left: 25px;*/
 }
 /* Center and limit width of actual nav elements */
 nav.mh-main-nav {
@@ -36,8 +36,8 @@ body > .mh-container-outer > div.mh-wrapper,
     margin: 0 auto;
 }
 /* Making the main content wider, the sidebar narrower */
-#main-content { 
-    width: calc(75% - 2.5%);     
+#main-content {
+    width: calc(75% - 2.5%);
 }
 aside.mh-sidebar {
     width: 25%;
@@ -50,12 +50,8 @@ aside.mh-sidebar {
     margin: 0 10px;
 }
 /* Remove vertical margin for the slider */
-.slides { 
-    margin: 0 !important;     
-}
-/* self-explaining */
-.search-form { 
-    background: #e64946;     
+.slides {
+    margin: 0 !important;
 }
 
 .footer-link {
@@ -65,21 +61,16 @@ aside.mh-sidebar {
 }
 
 .stick-to-top {
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 9999;
-}
-
-.collapse, 
-.collapse * {
-    max-height: 150px;
-    transition: all 0.5s ease-in-out;
+    width: 100%;
 }
 
 @media screen and (max-width: 900px) {
 
     #main-content { 
-        width: 100%;         
+        width: 100%;
     }
     .amr_widget,
     aside.mh-sidebar {
@@ -87,7 +78,7 @@ aside.mh-sidebar {
         margin: 15px 5% !important;
     }
     .mh-widget-title { 
-        text-align: center;         
+        text-align: center;
     }
     .widget_archive {
         visibility: hidden;

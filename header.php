@@ -9,31 +9,19 @@
 <?php endif; ?>
 <?php wp_head(); ?>
 <script>
-    //header-image.removeAttribute("height");
-    //header-image.removeAttribute("width");
-    document.addEventListener("scroll", function () {
-      var trigger_offset = 5;
-      function recurse_collapse(node) {
-        for (el of node) {
-          el.setAttribute("style", "max-height: 0px;");
-          recurse_collapse(el.children);
-        }
-      }
-      function recurse_expand(node) {
-        for (el of node) {
-          el.removeAttribute("style");
-          recurse_expand(el.children);
-        }
-      }
-      var header_image_wrapper = document.getElementsByClassName("collapse");
-      var header_image = document.querySelector(".mh-header-image");
-      if (window.pageYOffset > trigger_offset) {
-        recurse_collapse(header_image_wrapper);
-      }
-      if (window.pageYOffset < trigger_offset) {
-        recurse_expand(header_image_wrapper);
-      }
-    });
+  document.addEventListener("scroll", function() {
+    let navBar = document.querySelector("div.mh-main-nav-wrap");
+    let headerImg = document.querySelector("header img.mh-header-image");
+    let contentWrapper = document.querySelector("div.mh-wrapper");
+    if (window.pageYOffset > headerImg.clientHeight) {
+      navBar.classList.add("stick-to-top");
+      contentWrapper.style.marginTop = navBar.clientHeight + "px";
+    }
+    if (window.pageYOffset < headerImg.clientHeight) {
+      navBar.classList.remove("stick-to-top");
+      contentWrapper.style.marginTop = "";
+    }
+  });
 </script>
 </head>
 
