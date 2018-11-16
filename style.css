@@ -11,78 +11,78 @@ Version: 1.4.2
 
 /* Make the content 100% of the viewport */
 body > .mh-container-outer {
-    margin: 0;
-    width: 100%;
-    max-width: unset;
+  margin: 0;
+  width: 100%;
+  max-width: unset;
 }
 /* Site and header background in dark red, main content is still black on white */
 header.mh-header {
-    background-color: darkred;
+  background-color: darkred;
 }
 /* Center the header image, remove vertical margin */
 .mh-header-image-link,
 .mh-header-image {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 /* Center and limit width of actual nav elements */
 nav.mh-main-nav {
-    max-width: calc(1080px + 50px);
+  max-width: calc(1080px + 50px);
 }
 /* Center and limit width of actual content and stuff inside the footer */
 body > .mh-container-outer > div.mh-wrapper,
 .mh-copyright-wrap > div {
-    max-width: 1080px;
-    margin: 0 auto;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 /* Making the main content wider, the sidebar narrower */
 #main-content {
-    width: calc(75% - 2.5%);
+  width: calc(75% - 2.5%);
 }
 aside.mh-sidebar {
-    width: 25%;
-    float: right;
+  width: 25%;
+  float: right;
 }
 /* 2 of these widgets can fit side-by-side */
 .amr_widget.mh_custom_posts {
-    width: 47%;
-    float: left;
-    margin: 0 10px;
+  width: 47%;
+  float: left;
+  margin: 0 10px;
 }
 /* Remove vertical margin for the slider */
 .slides {
-    margin: 0 !important;
+  margin: 0 !important;
 }
 
 .footer-link {
-    color: #999;
-    text-decoration: underline;
-    font-size: 0.75rem;
+  color: #999;
+  text-decoration: underline;
+  font-size: 0.75rem;
 }
 
 .stick-to-top {
-    position: fixed;
-    top: 0;
-    z-index: 9999;
-    width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
 }
 
 @media screen and (max-width: 900px) {
 
-    #main-content { 
-        width: 100%;
-    }
-    .amr_widget,
-    aside.mh-sidebar {
-        width: 90% !important;
-        margin: 15px 5% !important;
-    }
-    .mh-widget-title { 
-        text-align: center;
-    }
-    .widget_archive {
-        visibility: hidden;
-        height: 0;
-        margin: 0;
-    }
+  #main-content { 
+    width: 100%;
+  }
+  .amr_widget,
+  aside.mh-sidebar {
+    width: 90% !important;
+    margin: 15px 5% !important;
+  }
+  .mh-widget-title { 
+    text-align: center;
+  }
+  .widget_archive {
+    visibility: hidden;
+    height: 0;
+    margin: 0;
+  }
 }
