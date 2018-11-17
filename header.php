@@ -9,17 +9,29 @@
 <?php endif; ?>
 <?php wp_head(); ?>
 <script>
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+
   document.addEventListener("scroll", function() {
     let navBar = document.querySelector("div.mh-main-nav-wrap");
     let headerImg = document.querySelector("header img.mh-header-image");
     let contentWrapper = document.querySelector("div.mh-wrapper");
-    if (window.pageYOffset > headerImg.clientHeight) {
+    let toTopBtn = document.getElementById("back-to-top");
+    if (window.pageYOffset >= headerImg.clientHeight) {
       navBar.classList.add("stick-to-top");
       contentWrapper.style.marginTop = navBar.clientHeight + "px";
+      toTopBtn.classList.add("show");
+      toTopBtn.classList.remove("hide");
     }
-    if (window.pageYOffset < headerImg.clientHeight) {
+    else if (window.pageYOffset < headerImg.clientHeight) {
       navBar.classList.remove("stick-to-top");
       contentWrapper.style.marginTop = "";
+      toTopBtn.classList.add("hide");
+      toTopBtn.classList.remove("show");
     }
   });
 </script>
