@@ -2,8 +2,8 @@
 <?php mh_magazine_lite_footer_widgets(); ?>
 <footer class="mh-copyright-wrap">
   <div class="mh-container mh-container-inner mh-clearfix">
-    <?php printf(esc_html__('%1$s'), '<a class="footer-link" href="' . esc_url('http://dkpnext.azurewebsites.net/impressum') . '">Impressum</a>'); ?>
-    <?php printf(esc_html__('%1$s'), '<a class="footer-link" href="' . esc_url('http://dkpnext.azurewebsites.net/datenschutzerklaerung') . '">Datenschutzerklärung</a>'); ?>
+    <a class="footer-link" href="http://dkpnext.azurewebsites.net/impressum">Impressum</a>
+    <a class="footer-link" href="http://dkpnext.azurewebsites.net/datenschutzerklaerung">Datenschutzerklärung</a>
   </div>
 </footer>
 <?php mh_after_footer(); ?>

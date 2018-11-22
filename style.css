@@ -4,11 +4,15 @@ Theme URI: https://github.com/Saphareas/DKP-Next
 Template: mh-magazine-lite
 Author: Fabian Große
 Author URI: https://github.com/Saphareas
-Description: This is a child theme for Wordpress based on MH Magazine lite. It customizes the parent theme for the DKP* Brandenburg website.
-Tags: one-column,two-columns,left-sidebar,right-sidebar,flexible-header,custom-header,custom-logo,custom-menu,featured-images,full-width-template,theme-options,threaded-comments,footer-widgets,blog,politics,news
-Version: 1.6
+Description: This is a child theme for Wordpress based on MH Magazine lite. It customizes the parent theme for the DKP Brandenburg website.
+Version: 1.6.1
+License: GNU General Public License v3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0-standalone.html
+Text Domain: dkpnext
+Tags: one-column,two-columns,left-sidebar,right-sidebar,flexible-header,custom-header,custom-menu,featured-images,full-width-template,theme-options,threaded-comments,footer-widgets,news,education
+
 GitHub Theme URI: https://github.com/Saphareas/DKP-Next
-GitHub Branch:    master
+GitHub Branch: master
 */
 
 /* Make the content 100% of the viewport */
@@ -28,12 +32,12 @@ header.mh-header {
   margin: 0 auto;
 }
 /* Center and limit width of actual nav elements */
-nav.mh-main-nav {
+nav.mh-main-nav,
+footer.mh-copyright-wrap > div {
   max-width: calc(1080px + 50px);
 }
 /* Center and limit width of actual content and stuff inside the footer */
-body > .mh-container-outer > div.mh-wrapper,
-.mh-copyright-wrap > div {
+body > .mh-container-outer > div.mh-wrapper {
   max-width: 1080px;
   margin: 0 auto;
 }
@@ -60,6 +64,7 @@ aside.mh-sidebar {
   color: #999;
   text-decoration: underline;
   font-size: 0.75rem;
+  margin: 0 5px;
 }
 
 .stick-to-top {
