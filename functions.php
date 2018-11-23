@@ -29,9 +29,9 @@ function DKP_Next_register_required_plugins() {
             'source'    => 'https://github.com/afragen/github-updater/archive/master.zip',
             'required'  => false,
         ),
-        array(
-			'name'      => 'amr shortcode any widget',
-			'slug'      => 'amr-shortcode-any-widget',
+		array(
+			'name'      => 'Social Icons',
+			'slug'      => 'social-icons',
 			'required'  => false,
 		),
 	);

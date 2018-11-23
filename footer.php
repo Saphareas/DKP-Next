@@ -1,11 +1,10 @@
 <?php mh_before_footer(); ?>
 <?php mh_magazine_lite_footer_widgets(); ?>
-<footer class="mh-copyright-wrap">
+<div class="mh-copyright-wrap">
   <div class="mh-container mh-container-inner mh-clearfix">
-    <a class="footer-link" href="http://dkpnext.azurewebsites.net/impressum">Impressum</a>
-    <a class="footer-link" href="http://dkpnext.azurewebsites.net/datenschutzerklaerung">Datenschutzerklärung</a>
+    <p class="mh-copyright"><?php printf(esc_html__('Copyright &copy; %1$s | WordPress Theme based on MH Magazine lite by %2$s', 'mh-magazine-lite'), date("Y"), '<a href="' . esc_url('https://www.mhthemes.com/') . '" rel="nofollow">MH Themes</a>'); ?></p>
   </div>
-</footer>
+</div>
 <?php mh_after_footer(); ?>
 <?php wp_footer(); ?>
 <a title="Zurück nach oben" href="javascript:void(0)" onclick="scrollToTop()" id="back-to-top" class="hide">
