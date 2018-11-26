@@ -13,5 +13,16 @@
     <rect x="15" y="25" width="20" height="25" fill="white"/>
   </svg>
 </a>
+<script>
+  jQuery(document).ready(function() {
+    setTimeout(function(){
+      let searchWidget = document.querySelector("[id^='search'].widget_search");
+      let slickSearch = searchWidget.cloneNode(true);
+      slickSearch.classList.add("slick-search");
+      let slickNav = document.querySelector("header.mh-header div.slicknav_menu");
+      slickNav.insertBefore(slickSearch, slickNav.firstChild);
+    }, 1);
+  });
+</script>
 </body>
 </html>

@@ -5,7 +5,7 @@ Template: mh-magazine-lite
 Author: Fabian Große
 Author URI: https://github.com/Saphareas
 Description: This is a child theme for Wordpress based on MH Magazine lite. It customizes the parent theme for the DKP Brandenburg website.
-Version: 1.6.2
+Version: 1.7
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0-standalone.html
 Text Domain: dkpnext
@@ -34,7 +34,7 @@ header.mh-header {
 /* Center and limit width of actual nav elements */
 nav.mh-main-nav,
 footer.mh-copyright-wrap > div {
-  max-width: calc(1080px + 50px);
+  max-width: 1080px;
 }
 /* Center and limit width of actual content and stuff inside the footer */
 body > .mh-container-outer > div.mh-wrapper {
@@ -103,6 +103,24 @@ transition: background .6s;
 .show {
   opacity: 1;
   visibility: visible;
+}
+
+/* Styling for search widget in mobile nav */
+.slick-search, .slick-search form.search-form {
+  margin: 0;
+  padding: 0;
+  background: none;
+  float: left;
+  width: 100%;
+}
+.slick-search {
+  margin: 5px;
+  margin-left: 20px;
+  width: 50%;
+}
+.slick-search form.search-form .search-field {
+  margin: 0;
+  width: 100%;
 }
 
 @media screen and (max-width: 900px) {
